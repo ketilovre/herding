@@ -1,0 +1,27 @@
+{
+  "name": "herding",
+  "version": "0.1.0",
+  "description": "Promise-based single-resolution LRU cache",
+  "keywords": [
+    "lru",
+    "cache",
+    "promise",
+    "herd",
+    "thundering"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/istanbul cover -i 'index.js' _mocha -- -R spec 'test/test.js'"
+  },
+  "author": "Ketil Øvrebø <ketilovre@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "lru-cache": "^2.6.5"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "should": "^7.0.2"
+  }
+}
